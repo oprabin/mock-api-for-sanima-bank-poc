@@ -5,7 +5,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import static com.digiconnect.mockapiforpoc.constants.BaseInterface.CLIENT_MANAGEMENT_BASE_CONTEXT;
+import static com.digiconnect.mockapiforpoc.base.BaseInterface.CLIENT_MANAGEMENT_BASE_CONTEXT;
 
 /**
  * User: oprabin

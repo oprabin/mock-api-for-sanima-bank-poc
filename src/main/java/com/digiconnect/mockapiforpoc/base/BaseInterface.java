@@ -1,4 +1,4 @@
-package com.digiconnect.mockapiforpoc.constants;
+package com.digiconnect.mockapiforpoc.base;
 
 /**
  * User: oprabin

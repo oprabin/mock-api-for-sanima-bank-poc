@@ -1,12 +1,9 @@
 package com.digiconnect.mockapiforpoc.client.controller;
 
-import com.digiconnect.mockapiforpoc.client.entity.ResponseKeys;
-import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import static com.digiconnect.mockapiforpoc.constants.BaseInterface.FILE_INFORMATION_BASE_CONTEXT;
+import static com.digiconnect.mockapiforpoc.base.BaseInterface.FILE_INFORMATION_BASE_CONTEXT;
 
 /**
  * User: oprabin

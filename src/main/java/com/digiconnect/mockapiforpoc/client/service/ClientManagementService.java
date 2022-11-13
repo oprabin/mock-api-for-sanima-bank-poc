@@ -11,7 +11,6 @@ import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
 
-import java.util.ArrayList;
 import java.util.List;
 import java.util.UUID;
 
@@ -65,28 +64,4 @@ public class ClientManagementService {
 
     }
 
-
-    public ResponseEntity addNewResponseKeys(List<String> responseKeys) {
-
-        List<String> addedKeys = new ArrayList<>();
-
-
-        for (String responseKey : responseKeys) {
-
-            if (!responseKeysRepository.findResponseKeysByResponseKey(responseKey)) {
-                addedKeys.add(responseKey);
-                ResponseKeys responseKeysEntity = ResponseKeys.builder()
-                        .id(UUID.randomUUID().toString())
-                        .responseKey(responseKey)
-                        .build();
-
-                responseKeysRepository.save(responseKeysEntity);
-            }
-
-
-        }
-
-        return new ResponseEntity(addedKeys, HttpStatus.OK);
-
-    }
 }

@@ -10,7 +10,7 @@ import org.xml.sax.SAXException;
 import javax.xml.parsers.ParserConfigurationException;
 import java.io.IOException;
 
-import static com.digiconnect.mockapiforpoc.constants.BaseInterface.INQUIRY_CONTROLLER_BASE_CONTEXT;
+import static com.digiconnect.mockapiforpoc.base.BaseInterface.INQUIRY_CONTROLLER_BASE_CONTEXT;
 
 /**
  * User: oprabin

@@ -1,8 +1,10 @@
 package com.digiconnect.mockapiforpoc.client.repository;
 
-import com.digiconnect.mockapiforpoc.client.entity.ClientConfig;
+import com.digiconnect.mockapiforpoc.client.entity.FileInformation;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
+
+import java.util.Optional;
 
 /**
  * User: oprabin
@@ -11,10 +13,15 @@ import org.springframework.stereotype.Repository;
  */
 
 @Repository
-public interface FileInformationRepository extends JpaRepository<ClientConfig, String> {
+public interface FileInformationRepository extends JpaRepository<FileInformation, Long> {
 
 
-    public boolean existsClientConfigByClientId(String clientId);
+//    public boolean existsClientConfigByClientId(String clientId);
+
+
+
+
+    public Optional<FileInformation> findById(Long id);
 
 
 
