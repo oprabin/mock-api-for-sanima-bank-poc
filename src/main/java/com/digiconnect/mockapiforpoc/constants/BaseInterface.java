@@ -11,6 +11,7 @@ public interface BaseInterface {
     public static String INQUIRY_CONTROLLER_BASE_CONTEXT = "/inquiry";
     public static String CLIENT_MANAGEMENT_BASE_CONTEXT = "/client";
     public static String RESPONSE_KEYS_BASE_CONTEXT = "/client";
+    public static String FILE_INFORMATION_BASE_CONTEXT = "/client";
 
 
 }
