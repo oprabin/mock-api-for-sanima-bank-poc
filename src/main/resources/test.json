@@ -1,146 +1,112 @@
 {
-  "FIXML": {
-    "Header": {
-      "ResponseHeader": {
-        "RequestMessageKey": {
-          "RequestUUID": "Req_1631522903937",
-          "ServiceRequestId": "AcctInq",
-          "ServiceRequestVersion": 10.2,
-          "ChannelId": "COR"
+  "Body": {
+    "AcctInqResponse": {
+      "AcctInqRs": {
+        "AcctId": {
+          "AcctId": 1011160000148,
+          "AcctType": {
+            "SchmCode": "SBSTF",
+            "SchmType": "SBA"
+          },
+          "AcctCurr": "NPR",
+          "BankInfo": {
+            "BankId": "",
+            "Name": "",
+            "BranchId": 1,
+            "BranchName": "",
+            "PostAddr": {
+              "Addr1": "",
+              "Addr2": "",
+              "Addr3": "",
+              "City": "",
+              "StateProv": "",
+              "PostalCode": "",
+              "Country": "",
+              "AddrType": ""
+            }
+          }
         },
-        "ResponseMessageInfo": {
-          "BankId": 1,
-          "TimeZone": "",
-          "MessageDateTime": "2021-09-13T08:51:47.308"
+        "CustId": {
+          "CustId": "R000192682",
+          "PersonName": {
+            "LastName": "",
+            "FirstName": "",
+            "MiddleName": "",
+            "Name": "ANUP KUMAR MAHARJAN",
+            "TitlePrefix": "MR."
+          }
         },
-        "UBUSTransaction": {
-          "Id": "",
-          "Status": ""
-        },
-        "HostTransaction": {
-          "Id": "",
-          "Status": "SUCCESS"
-        },
-        "HostParentTransaction": {
-          "Id": "",
-          "Status": ""
-        },
-        "CustomInfo": ""
-      }
-    },
-    "Body": {
-      "AcctInqResponse": {
-        "AcctInqRs": {
-          "AcctId": {
-            "AcctId": 1011160000148,
-            "AcctType": {
-              "SchmCode": "SBSTF",
-              "SchmType": "SBA"
-            },
-            "AcctCurr": "NPR",
-            "BankInfo": {
-              "BankId": "",
-              "Name": "",
-              "BranchId": 1,
-              "BranchName": "",
-              "PostAddr": {
-                "Addr1": "",
-                "Addr2": "",
-                "Addr3": "",
-                "City": "",
-                "StateProv": "",
-                "PostalCode": "",
-                "Country": "",
-                "AddrType": ""
-              }
+        "AcctOpenDt": "2014-03-09T00:00:00.000",
+        "BankAcctStatusCode": "A",
+        "AcctBal": [
+          {
+            "BalType": "LEDGER",
+            "BalAmt": {
+              "amountValue": 347.48,
+              "currencyCode": ""
             }
           },
-          "CustId": {
-            "CustId": "R000192682",
-            "PersonName": {
-              "LastName": "",
-              "FirstName": "",
-              "MiddleName": "",
-              "Name": "ANUP KUMAR MAHARJAN",
-              "TitlePrefix": "MR."
+          {
+            "BalType": "AVAIL",
+            "BalAmt": {
+              "amountValue": 347.48,
+              "currencyCode": ""
             }
           },
-          "AcctOpenDt": "2014-03-09T00:00:00.000",
-          "BankAcctStatusCode": "A",
-          "AcctBal": [
-            {
-              "BalType": "LEDGER",
-              "BalAmt": {
-                "amountValue": 347.48,
-                "currencyCode": ""
-              }
-            },
-            {
-              "BalType": "AVAIL",
-              "BalAmt": {
-                "amountValue": 347.48,
-                "currencyCode": ""
-              }
-            },
-            {
-              "BalType": "EFFAVL",
-              "BalAmt": {
-                "amountValue": 347.48,
-                "currencyCode": ""
-              }
-            },
-            {
-              "BalType": "FLOAT",
-              "BalAmt": {
-                "amountValue": 0,
-                "currencyCode": ""
-              }
-            },
-            {
-              "BalType": "LIEN",
-              "BalAmt": {
-                "amountValue": 0,
-                "currencyCode": ""
-              }
-            },
-            {
-              "BalType": "DRWPWR",
-              "BalAmt": {
-                "amountValue": 0,
-                "currencyCode": ""
-              }
-            },
-            {
-              "BalType": "ACCBAL",
-              "BalAmt": {
-                "amountValue": 347.48,
-                "currencyCode": "NPR"
-              }
-            },
-            {
-              "BalType": "SHADOW",
-              "BalAmt": {
-                "amountValue": 0,
-                "currencyCode": "NPR"
-              }
-            },
-            {
-              "BalType": "FUTBAL",
-              "BalAmt": {
-                "amountValue": 0,
-                "currencyCode": "NPR"
-              }
+          {
+            "BalType": "EFFAVL",
+            "BalAmt": {
+              "amountValue": 347.48,
+              "currencyCode": ""
             }
-          ]
-        },
-        "AcctInq_CustomData": {
-          "SCHMCODEDESC": "SANIMA STAFF SAVING"
-        }
+          },
+          {
+            "BalType": "FLOAT",
+            "BalAmt": {
+              "amountValue": 0,
+              "currencyCode": ""
+            }
+          },
+          {
+            "BalType": "LIEN",
+            "BalAmt": {
+              "amountValue": 0,
+              "currencyCode": ""
+            }
+          },
+          {
+            "BalType": "DRWPWR",
+            "BalAmt": {
+              "amountValue": 0,
+              "currencyCode": ""
+            }
+          },
+          {
+            "BalType": "ACCBAL",
+            "BalAmt": {
+              "amountValue": 347.48,
+              "currencyCode": "NPR"
+            }
+          },
+          {
+            "BalType": "SHADOW",
+            "BalAmt": {
+              "amountValue": 0,
+              "currencyCode": "NPR"
+            }
+          },
+          {
+            "BalType": "FUTBAL",
+            "BalAmt": {
+              "amountValue": 0,
+              "currencyCode": "NPR"
+            }
+          }
+        ]
+      },
+      "AcctInq_CustomData": {
+        "SCHMCODEDESC": "SANIMA STAFF SAVING"
       }
     }
   }
 }
-
-
-
-//53, FIXML.Body.AcctInqResponse.AcctInqRs.AcctId.BankInfo.Name, 3

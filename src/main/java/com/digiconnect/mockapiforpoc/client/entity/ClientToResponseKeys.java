@@ -5,7 +5,10 @@ import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-import javax.persistence.*;
+import javax.persistence.Entity;
+import javax.persistence.Id;
+import javax.persistence.OneToMany;
+import javax.persistence.OneToOne;
 import javax.validation.constraints.NotNull;
 import java.util.List;
 
@@ -17,22 +20,20 @@ import java.util.List;
 
 @Entity
 @Data
-@NoArgsConstructor
 @AllArgsConstructor
+@NoArgsConstructor
 @Builder
-//@Table(schema = "poc")
-public class ClientConfig {
+public class ClientToResponseKeys {
 
     @Id
-    private String uuid;
+    private String id;
 
+    @OneToOne
     @NotNull
-    private String clientId;
+    private ClientConfig clientConfig;
 
+    @OneToMany
     @NotNull
-    private String clientName;
-
-    @OneToMany(cascade = CascadeType.ALL)
     private List<ResponseKeys> responseKeys;
 
 }

@@ -1,11 +1,10 @@
-package com.digiconnect.mockapiforpoc.client.entity;
+package com.digiconnect.mockapiforpoc.client.entity.dto;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-import javax.persistence.*;
 import javax.validation.constraints.NotNull;
 import java.util.List;
 
@@ -15,16 +14,11 @@ import java.util.List;
  * Created with IntelliJ IDEA Ultimate
  */
 
-@Entity
 @Data
-@NoArgsConstructor
 @AllArgsConstructor
+@NoArgsConstructor
 @Builder
-//@Table(schema = "poc")
-public class ClientConfig {
-
-    @Id
-    private String uuid;
+public class ClientConfigDto {
 
     @NotNull
     private String clientId;
@@ -32,7 +26,6 @@ public class ClientConfig {
     @NotNull
     private String clientName;
 
-    @OneToMany(cascade = CascadeType.ALL)
-    private List<ResponseKeys> responseKeys;
+    private List<String> responseKeys;
 
 }

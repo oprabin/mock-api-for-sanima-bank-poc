@@ -4,6 +4,8 @@ import com.digiconnect.mockapiforpoc.client.entity.ResponseKeys;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
+import java.util.Optional;
+
 /**
  * User: oprabin
  * Date: 2022-11-13
@@ -20,7 +22,7 @@ public interface ResponseKeysRepository extends JpaRepository<ResponseKeys, Stri
 
     public ResponseKeys findByResponseKey(String responseKey);
 
-    public ResponseKeys findResponseKeysByResponseKeyAndFileInformationId(String responseKey, Long fileInformationId);
+    public Optional<ResponseKeys> findResponseKeysByResponseKeyAndFileInformationId(String responseKey, Long fileInformationId);
 
 
 

@@ -36,14 +36,14 @@ public class ResponseKeysManagementController {
     }
 
 
+/*
     @PostMapping(value = "/addClientWithResponseKey")
     public ResponseEntity addClientWithResponseKey(@RequestBody @NotNull ClientAndResponseKeysDto clientAndResponseKeysDto)
             throws EntityDoesNotExistsException, EntityAlreadyExistsException {
 
         return clientManagementService.addClientWithResponseKey(clientAndResponseKeysDto);
-
-
     }
+*/
 
 
     @PostMapping(value = "/addNewResponseKeys")

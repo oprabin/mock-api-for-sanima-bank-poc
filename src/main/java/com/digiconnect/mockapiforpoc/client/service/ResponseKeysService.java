@@ -50,8 +50,8 @@ public class ResponseKeysService {
             }
 
 
-            ResponseKeys responseKeysFromDb = responseKeysRepository.findResponseKeysByResponseKeyAndFileInformationId(responseKey, fileInformationId);
-            if (responseKeysFromDb != null) {
+            Optional<ResponseKeys> responseKeysFromDb = responseKeysRepository.findResponseKeysByResponseKeyAndFileInformationId(responseKey, fileInformationId);
+            if (responseKeysFromDb.isPresent()) {
                 continue;
             }
 
@@ -67,4 +67,12 @@ public class ResponseKeysService {
         return new ResponseEntity(addedKeys, HttpStatus.OK);
 
     }
+
+
+    public boolean responseKeyExists(String responseKey, Long fileInformationId){
+        Optional<ResponseKeys> responseKeysFromDb = responseKeysRepository.findResponseKeysByResponseKeyAndFileInformationId(responseKey, fileInformationId);
+        return responseKeysFromDb.isPresent();
+    }
+
+
 }

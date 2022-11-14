@@ -4,6 +4,8 @@ import com.digiconnect.mockapiforpoc.client.entity.ClientConfig;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
+import java.util.Optional;
+
 /**
  * User: oprabin
  * Date: 2022-11-13
@@ -15,6 +17,11 @@ public interface ClientConfigRepository extends JpaRepository<ClientConfig, Stri
 
 
     public boolean existsClientConfigByClientId(String clientId);
+
+
+//    Optional<ClientConfig> findClientConfigByClientId(String clientId);
+
+    public Optional<ClientConfig> findClientConfigByClientId(String clientId);
 
 
 
