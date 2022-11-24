@@ -15,7 +15,7 @@ import javax.xml.bind.annotation.XmlValue;
 @XmlRootElement
 @Builder
 @Data
-//@NoArgsConstructor
+@NoArgsConstructor
 @AllArgsConstructor
 public class UBUSTransaction {
 

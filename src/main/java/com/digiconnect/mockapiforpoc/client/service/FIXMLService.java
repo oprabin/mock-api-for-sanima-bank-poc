@@ -17,7 +17,6 @@ import com.digiconnect.mockapiforpoc.client.entity.dto.FIXMLPkg.BodyPkg.AcctInqR
 import com.digiconnect.mockapiforpoc.client.entity.dto.FIXMLPkg.Header;
 import com.digiconnect.mockapiforpoc.client.entity.dto.FIXMLPkg.HeaderPkg.ResponseHeader;
 import com.digiconnect.mockapiforpoc.client.entity.dto.FIXMLPkg.HeaderPkg.ResponseHeaderPkg.*;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import javax.xml.bind.JAXBContext;
@@ -132,6 +131,6 @@ public class FIXMLService {
         System.out.println(fixmlString);
         return fixmlString;
     }
-    }
+}
 
 
