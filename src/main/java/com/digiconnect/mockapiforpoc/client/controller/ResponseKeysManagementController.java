@@ -7,10 +7,7 @@ import com.digiconnect.mockapiforpoc.client.service.ResponseKeysService;
 import com.digiconnect.mockapiforpoc.exeption.EntityAlreadyExistsException;
 import com.digiconnect.mockapiforpoc.exeption.EntityDoesNotExistsException;
 import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import javax.validation.constraints.NotNull;
 import java.util.List;
@@ -52,10 +49,8 @@ public class ResponseKeysManagementController {
     }
 
 
-
-
-
-
-
-
+    @GetMapping("/test")
+    public String testResp(){
+        return responseKeysService.getResponse();
+    }
 }

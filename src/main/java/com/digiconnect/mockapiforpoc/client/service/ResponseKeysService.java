@@ -2,6 +2,7 @@ package com.digiconnect.mockapiforpoc.client.service;
 
 import com.digiconnect.mockapiforpoc.client.entity.FileInformation;
 import com.digiconnect.mockapiforpoc.client.entity.ResponseKeys;
+import com.digiconnect.mockapiforpoc.client.entity.dto.DeDuplicationInqRequestPkg.DeDuplicationInqRequest;
 import com.digiconnect.mockapiforpoc.client.entity.dto.ResponseKeysDto;
 import com.digiconnect.mockapiforpoc.client.repository.FileInformationRepository;
 import com.digiconnect.mockapiforpoc.client.repository.ResponseKeysRepository;
@@ -72,6 +73,12 @@ public class ResponseKeysService {
     public boolean responseKeyExists(String responseKey, Long fileInformationId){
         Optional<ResponseKeys> responseKeysFromDb = responseKeysRepository.findResponseKeysByResponseKeyAndFileInformationId(responseKey, fileInformationId);
         return responseKeysFromDb.isPresent();
+    }
+
+    public static String getResponse(){
+        DeDuplicationInqRequest deDuplicationInqRequest = new DeDuplicationInqRequest("ANUP","MAHARJAN","1987-11-19T00:00:00.000", "+977(01)9849060181","KTM","KTM",16777);
+         String result = deDuplicationInqRequest.getFirstName() + deDuplicationInqRequest.getLastName()+ deDuplicationInqRequest.getMiddleName();
+         return result;
     }
 
 

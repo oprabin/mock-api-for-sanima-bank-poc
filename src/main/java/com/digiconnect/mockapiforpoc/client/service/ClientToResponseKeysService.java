@@ -34,6 +34,7 @@ public class ClientToResponseKeysService {
     }
 
 
+
     public ResponseEntity addClientToResponseKeys(ClientToResponseKeysDto clientToResponseKeysDto) throws EntityDoesNotExistsException {
         String clientId = clientToResponseKeysDto.getClientId();
         List<ResponseKeys> responseKeys = new ArrayList<>();

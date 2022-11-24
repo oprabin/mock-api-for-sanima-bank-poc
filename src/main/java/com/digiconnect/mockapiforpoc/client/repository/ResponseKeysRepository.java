@@ -20,6 +20,8 @@ public interface ResponseKeysRepository extends JpaRepository<ResponseKeys, Stri
 
 
 
+
+
     public ResponseKeys findByResponseKey(String responseKey);
 
     public Optional<ResponseKeys> findResponseKeysByResponseKeyAndFileInformationId(String responseKey, Long fileInformationId);

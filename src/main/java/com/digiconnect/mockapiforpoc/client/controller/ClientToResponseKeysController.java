@@ -33,8 +33,6 @@ public class ClientToResponseKeysController {
     @PostMapping("/clientToResponseKeys")
     public ResponseEntity addClientToResponseKeys(@NotNull @RequestBody ClientToResponseKeysDto clientToResponseKeysDto) throws EntityDoesNotExistsException {
         return clientToResponseKeysService.addClientToResponseKeys(clientToResponseKeysDto);
-
-
     }
 
 
